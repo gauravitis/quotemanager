@@ -1,70 +1,162 @@
-# Getting Started with Create React App
+# Quote Manager Pro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src="public/logo192.png" alt="Quote Manager Pro Logo" width="120"/>
+  
+  [![GitHub license](https://img.shields.io/github/license/gauravitis/quotemanager)](https://github.com/gauravitis/quotemanager/blob/master/LICENSE)
+  [![React Version](https://img.shields.io/badge/react-18.2.0-blue.svg)](https://reactjs.org/)
+  [![Firebase](https://img.shields.io/badge/firebase-10.7.0-orange.svg)](https://firebase.google.com/)
+</div>
 
-## Available Scripts
+## 🚀 About The Project
 
-In the project directory, you can run:
+Quote Manager Pro is a sophisticated, enterprise-grade quotation management system designed to streamline the process of creating, managing, and tracking business quotations. Built with modern web technologies and a focus on user experience, it offers a comprehensive solution for businesses to handle their quotation workflow efficiently.
 
-### `npm start`
+### 🌟 Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Smart Item Management**
+  - Intelligent HSN code-based GST calculation
+  - Automatic price calculations with discounts
+  - Real-time total computation
+  - Bulk item import capabilities
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Dynamic Quote Generation**
+  - Professional PDF quotation generation
+  - Customizable templates
+  - Company branding integration
+  - Multi-currency support
 
-### `npm test`
+- **Client Management**
+  - Comprehensive client database
+  - Client history tracking
+  - Quick client lookup
+  - Contact information management
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Advanced Dashboard**
+  - Real-time analytics
+  - Quote status tracking
+  - Performance metrics
+  - Conversion rate analysis
 
-### `npm run build`
+## 🛠️ Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**
+  - React.js 18.2.0
+  - Material-UI (MUI) for modern UI components
+  - React Router for navigation
+  - Context API for state management
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Backend & Database**
+  - Firebase 10.7.0
+  - Firestore for real-time data storage
+  - Firebase Authentication
+  - Cloud Functions for serverless operations
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Development Tools**
+  - Git for version control
+  - npm for package management
+  - ESLint for code quality
+  - Prettier for code formatting
 
-### `npm run eject`
+## 📦 Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/gauravitis/quotemanager.git
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install dependencies:
+   ```bash
+   cd quotemanager
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Set up Firebase:
+   - Create a Firebase project
+   - Copy your Firebase configuration
+   - Create a .env file with your Firebase credentials
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-## Learn More
+## 🔧 Configuration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Firebase Configuration:
+   ```javascript
+   // src/firebase.js
+   const firebaseConfig = {
+     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+     authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+     // ... other config
+   };
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Environment Variables:
+   Create a .env file in the root directory:
+   ```
+   REACT_APP_FIREBASE_API_KEY=your_api_key
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
+   // ... other variables
+   ```
 
-### Code Splitting
+## 🚀 Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Login/Registration**
+   - Use your email to create an account
+   - Set up your company profile
+   - Configure quotation templates
 
-### Analyzing the Bundle Size
+2. **Creating Quotes**
+   - Select or add a client
+   - Add items with automatic GST calculation
+   - Apply discounts and terms
+   - Generate and preview PDF
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Managing Quotes**
+   - Track quote status
+   - View quote history
+   - Export reports
+   - Monitor analytics
 
-### Making a Progressive Web App
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
-### Advanced Configuration
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 👨‍💻 About the Developer
 
-### Deployment
+### Gaurav Singh
+- **Role**: Full Stack Developer
+- **Expertise**: React.js, Firebase, Enterprise Applications
+- **LinkedIn**: [Connect with Gaurav](https://www.linkedin.com/in/gauravitis/)
+- **GitHub**: [@gauravitis](https://github.com/gauravitis)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Gaurav is a passionate full-stack developer with expertise in building scalable enterprise applications. With a strong foundation in modern web technologies and a keen eye for user experience, he has developed Quote Manager Pro to address the real-world challenges faced by businesses in quotation management.
 
-### `npm run build` fails to minify
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Material-UI for the amazing component library
+- Firebase team for the robust backend services
+- All the contributors who have helped shape this project
+
+## 📞 Contact
+
+Gaurav Singh - [@gauravitis](https://twitter.com/gauravitis) - gaurav@example.com
+
+Project Link: [https://github.com/gauravitis/quotemanager](https://github.com/gauravitis/quotemanager)
+
+---
+<div align="center">
+  Made with ❤️ by Gaurav Singh
+</div>

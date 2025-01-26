@@ -1,0 +1,355 @@
+.quote-creator {
+  padding: 24px;
+  color: #333;
+}
+
+.page-title {
+  color: #333;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.quote-form {
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.form-grid {
+  margin-top: 16px;
+}
+
+/* Form Controls */
+.quote-form .MuiOutlinedInput-root {
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.quote-form .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #1976d2;
+}
+
+.quote-form .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #1976d2;
+}
+
+.quote-form .MuiInputLabel-root {
+  color: #666;
+}
+
+.quote-form .MuiInputLabel-root.Mui-focused {
+  color: #1976d2;
+}
+
+/* Input Text Color */
+.quote-form .MuiSelect-select,
+.quote-form .MuiAutocomplete-input,
+.quote-form .MuiInputBase-input {
+  color: #333 !important;
+}
+
+/* Disabled Fields */
+.quote-form .Mui-disabled {
+  background-color: #f5f5f5 !important;
+  color: #999 !important;
+  -webkit-text-fill-color: #999 !important;
+}
+
+/* Error States */
+.quote-form .Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: #d32f2f !important;
+}
+
+.quote-form .Mui-error.MuiFormLabel-root {
+  color: #d32f2f !important;
+}
+
+/* Autocomplete Dropdown Styles */
+.MuiAutocomplete-popper[role="presentation"] {
+  background-color: #ffffff !important;
+  margin-top: 8px !important;
+}
+
+.MuiAutocomplete-popper[role="presentation"] .MuiPaper-root {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.MuiAutocomplete-popper[role="presentation"] .MuiAutocomplete-listbox {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+  padding: 8px 0 !important;
+  max-height: 300px !important;
+}
+
+.MuiAutocomplete-popper[role="presentation"] .MuiAutocomplete-option {
+  color: #333 !important;
+  background-color: #ffffff !important;
+  min-height: 48px !important;
+  padding: 8px 16px !important;
+}
+
+.MuiAutocomplete-popper[role="presentation"] .MuiAutocomplete-option:hover {
+  background-color: rgba(25, 118, 210, 0.08) !important;
+}
+
+.MuiAutocomplete-popper[role="presentation"] .MuiAutocomplete-option[aria-selected="true"] {
+  background-color: rgba(25, 118, 210, 0.16) !important;
+}
+
+/* Input Styles */
+.quote-form .MuiAutocomplete-root .MuiOutlinedInput-root {
+  background-color: #ffffff !important;
+}
+
+.quote-form .MuiAutocomplete-root .MuiOutlinedInput-root .MuiOutlinedInput-input {
+  color: #333333 !important;
+}
+
+.quote-form .MuiAutocomplete-root .MuiOutlinedInput-root .MuiAutocomplete-endAdornment {
+  color: #666666 !important;
+}
+
+/* Override Material-UI Popover styles */
+div[role="presentation"].MuiPopover-root .MuiPaper-root {
+  background-color: #ffffff !important;
+}
+
+div[role="presentation"].MuiPopover-root .MuiList-root {
+  background-color: #ffffff !important;
+  color: #333333 !important;
+}
+
+div[role="presentation"].MuiPopover-root .MuiMenuItem-root {
+  color: #333333 !important;
+  min-height: 40px !important;
+  padding: 8px 16px !important;
+}
+
+/* Dropdown Menu Styles */
+.MuiSelect-select {
+  color: #333 !important;
+}
+
+.MuiMenuItem-root {
+  color: #333 !important;
+  background-color: #ffffff !important;
+}
+
+.MuiPopover-paper {
+  background-color: #ffffff !important;
+}
+
+.MuiList-root.MuiMenu-list {
+  background-color: #ffffff !important;
+}
+
+.MuiMenuItem-root:hover {
+  background-color: rgba(25, 118, 210, 0.08) !important;
+}
+
+.MuiMenuItem-root.Mui-selected {
+  background-color: rgba(25, 118, 210, 0.16) !important;
+}
+
+/* No Options Message */
+.MuiAutocomplete-noOptions {
+  color: #666666 !important;
+  padding: 8px 16px !important;
+}
+
+/* Loading Message */
+.MuiAutocomplete-loading {
+  color: #666666 !important;
+  padding: 8px 16px !important;
+}
+
+/* Group Headers */
+.MuiAutocomplete-groupLabel {
+  color: #1976d2 !important;
+  background-color: #f5f5f5 !important;
+  font-weight: 600 !important;
+}
+
+/* Table Styles */
+.quote-table-container {
+  margin: 16px 0;
+  overflow-x: auto;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.MuiTableHead-root {
+  background-color: #f5f5f5;
+}
+
+.MuiTableHead-root .MuiTableCell-root {
+  font-weight: 600;
+  color: #333;
+  padding: 12px 16px;
+}
+
+.MuiTableBody-root .MuiTableCell-root {
+  padding: 8px 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.MuiTableRow-root:hover {
+  background-color: #f8f8f8;
+}
+
+/* Form field styles */
+.MuiTextField-root {
+  background-color: #fff;
+}
+
+.MuiTextField-root.Mui-disabled {
+  background-color: #f8f8f8;
+}
+
+.MuiAutocomplete-root .MuiOutlinedInput-root {
+  padding: 4px !important;
+}
+
+/* Price details panel */
+.price-details {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+/* Add item button */
+.add-item-button {
+  margin-bottom: 16px;
+}
+
+.quote-form .MuiTableContainer-root {
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  border: 1px solid #e0e0e0;
+}
+
+.quote-form .MuiTableHead-root {
+  background-color: #f5f5f5;
+}
+
+.quote-form .MuiTableCell-head {
+  background-color: #f5f5f5;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.quote-form .MuiTableCell-body {
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.quote-form .MuiTableRow-root:hover {
+  background-color: rgba(25, 118, 210, 0.04);
+}
+
+/* Dialog Styles */
+.MuiDialog-paper {
+  background-color: #ffffff !important;
+  color: #333 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.MuiDialogTitle-root {
+  background-color: #f5f5f5;
+  color: #333 !important;
+}
+
+.MuiDialogContent-root {
+  background-color: #ffffff;
+  color: #333 !important;
+}
+
+.MuiDialogActions-root {
+  background-color: #f5f5f5;
+  padding: 16px 24px !important;
+}
+
+/* Buttons */
+.quote-form .MuiButton-contained {
+  background: #1976d2 !important;
+  color: #fff !important;
+  font-weight: 500;
+  padding: 8px 24px;
+  text-transform: none;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.3) !important;
+}
+
+.quote-form .MuiButton-contained:hover {
+  background: #1565c0 !important;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.4) !important;
+}
+
+.quote-form .MuiIconButton-root {
+  color: #1976d2;
+}
+
+/* Select Dropdown Icon */
+.MuiSelect-icon {
+  color: #666 !important;
+}
+
+/* Loading State */
+.quote-form .MuiCircularProgress-root {
+  color: #1976d2;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .quote-creator {
+    padding: 16px;
+  }
+
+  .quote-form {
+    padding: 16px;
+  }
+
+  .quote-form .MuiTableContainer-root {
+    overflow-x: auto;
+  }
+}
+
+.MuiList-root {
+  background-color: #ffffff !important;
+}
+
+.MuiList-root .MuiMenuItem-root {
+  color: #333 !important;
+  font-size: 14px !important;
+  padding: 12px 16px !important;
+}
+
+.MuiList-root .MuiMenuItem-root:hover {
+  background-color: rgba(25, 118, 210, 0.08) !important;
+}
+
+.MuiList-root .MuiMenuItem-root.Mui-selected {
+  background-color: rgba(25, 118, 210, 0.16) !important;
+}
+
+/* Override Material-UI default styles */
+.MuiPaper-root.MuiMenu-paper.MuiPopover-paper {
+  background-color: #ffffff !important;
+}
+
+.MuiSelect-select.MuiSelect-outlined {
+  color: #333 !important;
+}

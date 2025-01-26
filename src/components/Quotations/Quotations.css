@@ -1,0 +1,48 @@
+.quotations-table {
+  min-width: 650px;
+}
+
+.status-cell {
+  text-transform: capitalize;
+}
+
+.action-cell {
+  white-space: nowrap;
+}
+
+.view-dialog-content {
+  padding: 24px;
+}
+
+.section-title {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+.totals-section {
+  margin-top: 24px;
+  text-align: right;
+}
+
+.grand-total {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #1976d2;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-only {
+    display: block !important;
+  }
+  
+  .MuiDialog-paper {
+    box-shadow: none !important;
+  }
+}

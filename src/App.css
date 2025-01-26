@@ -1,0 +1,160 @@
+:root {
+  --primary-color: #00b4d8;
+  --secondary-color: #90e0ef;
+  --background-dark: #0a192f;
+  --surface-dark: #112240;
+  --text-primary: #e2e8f0;
+  --text-secondary: #8892b0;
+  --warning-color: #ffd700;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-content {
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem;
+  background: var(--surface-dark);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: var(--text-primary);
+  margin: 0;
+  background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glowing-line {
+  width: 150px;
+  height: 4px;
+  background: var(--primary-color);
+  border-radius: 2px;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.glowing-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--primary-color);
+  filter: blur(8px);
+  opacity: 0.7;
+}
+
+.crm-title {
+  font-size: 2.5rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.warning-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 215, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--warning-color);
+  max-width: 600px;
+  margin: 2rem 0;
+}
+
+.warning-icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--warning-color);
+}
+
+.warning-text {
+  color: var(--warning-color);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.cta-button {
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: var(--background-dark);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 180, 216, 0.4);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
